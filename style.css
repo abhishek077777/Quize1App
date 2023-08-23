@@ -73,7 +73,9 @@ body{
     width: 150px;
     border: 0;
     padding: 10px;
-    margin: 20px auto 0;
+   
+    margin-left: 40%;
+    margin-top: 4%;
     border-radius: 4px;
     cursor: pointer;
     
@@ -83,17 +85,25 @@ body{
 }
 .correct{
     background: #9aeabc;
+
 }
 .incorrect{
     background: #ff9393;
+    
 }
 #btnn{
     font-size: medium;
     background-color:  rgb(210, 52, 52);
-    margin-left: 10%;
-    margin-top: 2%;
+    margin-left: 5%;
+    margin-top: 7%;
     padding-right: 2%;
     
     
 
+}
+#lengt{
+
+    margin-top: 30px;
+    color: blue;
+  
 }

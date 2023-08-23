@@ -45,13 +45,13 @@ const questions = [
     ]
 },
 {
-    question : " Who is the most saxy girl  in the world ? ",
+    question : " Who is the Father Of Indian Constitution ? ",
     answers : [
         
-           { text : "Shreya", correct: false},
-           { text : "KHUSHI", correct: true},
-           { text : "Dolly", correct: false},
-           { text : "Aunty ki beti", correct: false},
+           { text : " Dr Sachchidananda Sinha", correct: false},
+           { text : "Dr Bheem Rao Ambedkar", correct: true},
+           { text : " DrRajendra Prasad", correct: false},
+           { text : "Mahatma Gandhi", correct: false},
         
     ]
 },
@@ -105,6 +105,7 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const GobackButton = document.getElementById("btnn");
+const Leng =document.getElementById("lengt");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -112,7 +113,9 @@ function startQuize(){
       currentQuestionIndex = 0;
       score = 0;
       nextButton.innerHTML = "Next";
+      
       showQuestion();
+     
 
 }
 function showQuestion(){
@@ -121,6 +124,10 @@ function showQuestion(){
 
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
+    Leng.innerHTML=` Ques.  Watched ${  questionNo } out  of ${questions.length       
+    }!`;
+    
+    
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 currentQuestion.answers.forEach(answer => {
     const button = document.createElement("button");
@@ -207,9 +214,10 @@ const backButtonClick = () => {
     // }else{
     //     wrong++;
     // }
-    currentQuestionIndex++ > 0  && currentQuestionIndex--;
+    currentQuestionIndex > 0  && currentQuestionIndex--;
     
-    startQuize()
+   showQuestion()
+   
     return;
   };
 
