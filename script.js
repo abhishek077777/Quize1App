@@ -28,13 +28,13 @@ const questions = [
         
            { text : "Kahari", correct: false},
            { text : "Gobi", correct: false},
-           { text : "Sahara", correct: true},
-           { text : "Antarctica", correct: false},
+           { text : "Sahara", correct: false},
+           { text : "Antarctica", correct: true},
         
     ]
 },
 {
-    question : " Which is the smalest continent in the world ? ",
+    question : " Which is the smallest continent in the world ? ",
     answers : [
         
            { text : "Asia", correct: false},
@@ -54,7 +54,51 @@ const questions = [
            { text : "Aunty ki beti", correct: false},
         
     ]
+},
+
+{
+    question : " Sunset and Sunrise ke samay sun ka abhari chapatapan kis parighatna ke karan hota h ? ",
+    answers : [
+        
+           { text : "Refraction ( Apbartan )", correct: true},
+           { text : "Reflection ( Prabartan)", correct: false},
+           { text : "Diffraction ( vivartan )", correct: false},
+           { text : "Polarization ( Dhurvan)", correct: false},
+        
+    ]
+},
+
+{
+    question : " Fisrt world War ke samay kon sa desh 1915 me Britain ke khilaf centeral force me shamil hua tha ? ",
+    answers : [
+        
+           { text : "France ", correct: false},
+           { text : "Bulgaria", correct: true},
+           { text : "America", correct: false},
+           { text : "Germany", correct: false},
+        
+    ]
+},
+{
+    question : " Tehri Dam kis rivers ke Sangam ( Confluence ) par situated h  ",
+    answers : [
+        
+           { text : "Bhagbati and Bhilganga", correct: true},
+           { text : "Bhagbati and Alanknanda", correct: false},
+           { text : "Alaknanda and Vanganga", correct: false},
+           { text : "Banas and Khari", correct: false},
+        
+    ]
 }
+
+
+
+
+
+
+
+
+
 
 ];
 const questionElement = document.getElementById("question");
