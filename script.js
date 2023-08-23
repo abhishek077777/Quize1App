@@ -120,7 +120,7 @@ function startQuize(){
 }
 function showQuestion(){
 
-    resetState();
+     resetState();
 
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
@@ -190,6 +190,9 @@ function handleNextButton(){
        nextButton.innerHTML = "Play Again";
        nextButton.style.display = "block";
        GobackButton.style.display = "block";
+       Leng.innerHTML="ABHII";
+       
+      ;
 
 
  }
